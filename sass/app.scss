@@ -1,6 +1,6 @@
 
 .welcomeSentence{
-  color: rgb(78,76,77);
+  color: white;
   font-family: 'Ubuntu', sans-serif;
   text-align: center;
   display: flex;
@@ -14,23 +14,55 @@
     font-family: 'Ubuntu', sans-serif;
     font-size: 40px;
     text-decoration: none;
+    color:white;
+
 }
 
 
+.buttonStyle:hover{
+  animation-name: transformButtons;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes transformButtons {
+  0%{
+    text-decoration: none; color:#8dd2f7;
+  }
+  50%{
+    transform: scale(1.1);
+    // text-decoration: none; color:#3cb3f3;
+  }
+
+}
+
+
+ .buttonStyle:active { text-decoration: none; color:#868686; }
+
+
+a:focus { text-decoration: none; color:#868686; }
+a:hover { text-decoration: none; color:none; }
+//.buttonStyle:visited { text-decoration: none; color:rgb(78,76,77); }
+
+
 .buttons{
-  margin-top: 200px;
-  color:rgb(78,76,77);
+  margin: 200px 0 200px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
 
+@media (max-width: 800px){
+  .buttons{
+    margin: 50px 100px 50px 100px;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: justify-content;
+    align-items: center;
+  }
 
-a:visited { text-decoration: none; color:rgb(78,76,77); }
-a:hover { text-decoration: none; color:blue; }
-a:focus { text-decoration: none; color:yellow; }
-a:hover, a:active { text-decoration: none; color:#868686; }
-
+}
 
 .backgroundImage{
 width:100%;height:100%;position:absolute;top:0;left:0;z-index:-5000;

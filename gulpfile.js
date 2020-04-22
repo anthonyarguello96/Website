@@ -17,7 +17,7 @@ const imageminPngquant = require('imagemin-pngquant');
 function watch() {
   gulp.watch('sass/**/*.scss', gulp.parallel(styles));
   gulp.watch('sass/**/*.scss').on('change', reload);
-  gulp.watch('index.html', gulp.series(copyHtml));
+  gulp.watch('*.html', gulp.series(copyHtml));
   gulp.watch('*.html').on('change', reload);
   gulp.watch('img', gulp.series(copyImages));
   gulp.watch('img/*').on('change', reload);
@@ -44,7 +44,7 @@ function styles(cb) {
 
 
 function copyHtml(cb) {
-  gulp.src('index.html')
+  gulp.src('*.html')
       .pipe(gulp.dest('dist'));
   cb();
 }
