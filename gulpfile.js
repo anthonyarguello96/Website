@@ -19,8 +19,8 @@ function watch() {
   gulp.watch('sass/**/*.scss').on('change', reload);
   gulp.watch('*.html', gulp.series(copyHtml));
   gulp.watch('*.html').on('change', reload);
-  gulp.watch('img', gulp.series(copyImages));
-  gulp.watch('img/*').on('change', reload);
+  gulp.watch('img/**/*.jpg', gulp.series(copyImages));
+  gulp.watch('img/**/*').on('change', reload);
   gulp.watch('js/**/*.js', gulp.series(lint, scripts));
   gulp.watch('js/**/*.js').on('change', reload);
   browserSync.init({
@@ -51,7 +51,7 @@ function copyHtml(cb) {
 
 
 function copyImages() {
-  return gulp.src('img/*')
+  return gulp.src('img/**/*.jpg')
       .pipe(imagemin({
         progressive: true,
         use: imageminPngquant(),
@@ -104,4 +104,4 @@ exports.scripts= scripts;
 exports.copyHtml= copyHtml;
 exports.copyImages= copyImages;
 exports.default= series(styles, lint, jasmine, scripts,
-    copyHtml, copyImages, watch);
+    copyHtml, /* copyImages, */watch);
