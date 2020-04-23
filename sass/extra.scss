@@ -2,16 +2,18 @@ body{
   background-color:#fdfdfd;
 }
 
+
 .buttons{
   background-color: transparent;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-min-width: 100%;
-margin-left: -1.37%;
-margin-right: -1%;
-margin-top: 10%;
+  min-width: 100%;
+  margin-left: -1.37%;
+  margin-right: -1%;
+  margin-top: 10%;
 }
+
 
 .buttonStyle{
     font-family: 'Ubuntu', sans-serif;
@@ -19,14 +21,15 @@ margin-top: 10%;
     margin: 20px 20px 20px 20px;
     text-decoration: none;
     color:#c9cecd;
-
 }
+
 
 .buttonStyle:hover{
   animation-name: transformButtons;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
 }
+
 @keyframes transformButtons {
   0%{
     text-decoration: none; color:#939897;
@@ -42,13 +45,11 @@ margin-top: 10%;
 }
 
 
-
-
 .anchorImages{
   width: 80%;
   margin: 1%;
-
 }
+
 
 .anchorImagesContainer{
   display: flex;
@@ -56,8 +57,6 @@ margin-top: 10%;
   align-items: center;
   margin-top: 10%;
 }
-
-
 
 
 @media (max-width: 432px){
@@ -68,6 +67,7 @@ margin-top: 10%;
     align-items: center;
   }
 
+
   .anchorImagesContainer{
     display: flex;
     flex-direction: column;
@@ -77,14 +77,12 @@ margin-top: 10%;
     margin-right:-2%;
   }
 
+
   .anchorImages{
     width: 100%;
     margin: 0 ;
   }
 
-  .divLine{
-  visibility: hidden;
-    }
 
   .buttonStyle{
       font-family: 'Ubuntu', sans-serif;
@@ -92,8 +90,5 @@ margin-top: 10%;
       margin: 20px 20px 20px 20px;
       text-decoration: none;
       color:#c9cecd;
-
     }
-
-
 }
