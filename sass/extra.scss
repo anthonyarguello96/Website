@@ -2,7 +2,78 @@ body{
   background-color:#fdfdfd;
 }
 
+// Overlay and text on images
+// ##############################################################################
 
+.container{
+  width:1280px;
+  margin: 70px auto 0;
+  display: flex;
+  flex-direction: row;
+  // flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .box{
+  position: relative;
+  width:50%;
+  height: 50%;
+  box-sizing: border-box;
+  margin: 10px;
+  display: inline-block;
+}
+
+.container .box .imgBox{
+position: relative;
+overflow: hidden;
+}
+
+
+.container .box .imgBox img{
+max-width: 100%;
+transition: transform 2s;
+}
+
+.container .box:hover .imgBox img {
+  transform: scale(1.1);
+}
+
+.container .box .details{
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  bottom: 6px;
+  left: 6px;
+  background: rgba(201, 206, 205, 0.3);
+  transition: 0.3s ease-in;
+}
+
+
+.container .box:hover .details{
+opacity: 0;
+}
+
+.container .box .details .content{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  text-align: center;
+  padding: 15px;
+  color: white;
+  left: 30%;
+}
+
+
+.container .box .details .content h2{
+  margin:0;
+  padding: 0;
+  font-size: 60px;
+  color: white;
+}
+
+//Buttos styling
+// ##############################################################################
 .buttons{
   background-color: #c9cecd;
   display: flex;
@@ -43,25 +114,15 @@ body{
 100%{
   text-decoration: none;
   transform: scale(1.1);
-}
-}
-
-
-.anchorImages{
-  width: 45%;
-  margin: 1%;
+  }
 }
 
+// ##############################################################################
 
-.anchorImagesContainer{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 6.5%;
 
-}
-
-@media (min-width: 884px) and (max-width: 1500px){
+// ##############################################################################
+// Media queries
+@media (min-width: 884px) and (max-width: 1300px){
   .buttons{
     margin-top: 5%;
     background-color: transparent;
@@ -71,20 +132,34 @@ body{
   }
 
 
-  .anchorImagesContainer{
+  .container{
+    width:100%;
+    margin: 70px auto 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-top: 10%;
-    margin-bottom:17%;
-    margin-left:-2%;
-    margin-right:-2%;
   }
 
 
-  .anchorImages{
-    width: 50%;
-    margin: 0 ;
+  .container .box{
+    position: relative;
+    width:100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 10px;
+    display: inline-block;
+  }
+
+
+  .container .box .details .content{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: white;
+    left: 40%;
   }
 
 
@@ -97,43 +172,8 @@ body{
     }
 }
 
-@media (min-width: 884px) and (max-width: 1084px){
-  .buttons{
-    margin-top: 5%;
-    background-color: transparent;
-    flex-direction: row;
-    align-items: center;
-    padding: 0;
-  }
 
-
-  .anchorImagesContainer{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 20%;
-    margin-bottom:25%;
-    margin-left:-2%;
-    margin-right:-2%;
-  }
-
-
-  .anchorImages{
-    width: 50%;
-    margin: 0 ;
-  }
-
-
-  .buttonStyle{
-      font-family: 'Ubuntu', sans-serif;
-      font-size: 25px;
-      margin: 20px 20px 20px 20px;
-      text-decoration: none;
-      color:#c9cecd;
-    }
-}
-
-@media (max-width: 884px){
+@media (min-width:675px )and(max-width: 884px){
   .buttons{
     margin-top: 5%;
     background-color: transparent;
@@ -143,20 +183,34 @@ body{
   }
 
 
-  .anchorImagesContainer{
+  .container{
+    width:100%;
+    margin: 70px auto 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-top: 5%;
-    margin-left:-2.2%;
-    margin-right:-2%;
-
   }
 
 
-  .anchorImages{
-    width: 100%;
-    margin: 0 ;
+  .container .box{
+    position: relative;
+    width:100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 10px;
+    display: inline-block;
+  }
+
+
+  .container .box .details .content{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: white;
+    left: 36%;
   }
 
 
@@ -167,4 +221,168 @@ body{
       text-decoration: none;
       color:#c9cecd;
     }
+}
+
+
+@media (min-width: 575px)and(max-width:675px){
+  .buttons{
+    margin-top: 5%;
+    background-color: transparent;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+
+  .buttonStyle{
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 25px;
+      margin: 20px 20px 20px 20px;
+      text-decoration: none;
+      color:#c9cecd;
+    }
+
+
+  .container{
+    width:100%;
+    margin: 70px auto 0;
+    display: flex;
+    flex-direction: column;
+    // flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .container .box{
+    position: relative;
+    width:100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 10px;
+    display: inline-block;
+  }
+
+
+  .container .box .details .content{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: white;
+    left: 32%;
+  }
+}
+
+
+@media (min-width: 475px)and(max-width:574px){
+  .buttons{
+    margin-top: 5%;
+    background-color: transparent;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+
+  .buttonStyle{
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 25px;
+      margin: 20px 20px 20px 20px;
+      text-decoration: none;
+      color:#c9cecd;
+    }
+
+
+  .container{
+    width:100%;
+    margin: 70px auto 0;
+    display: flex;
+    flex-direction: column;
+    // flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .container .box{
+    position: relative;
+    width:100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 10px;
+    display: inline-block;
+  }
+
+
+  .container .box .details .content{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: white;
+    left: 26%;
+  }
+}
+
+
+@media (max-width:474px){
+  .buttons{
+    margin-top: 5%;
+    background-color: transparent;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+
+  .buttonStyle{
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 25px;
+      margin: 10px 10px 10px 10px;
+      text-decoration: none;
+      color:#c9cecd;
+    }
+
+
+  .container{
+    width:100%;
+    margin: 10px auto 0;
+    display: flex;
+    flex-direction: column;
+    // flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .container .box{
+    position: relative;
+    width:100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 10px;
+    display: inline-block;
+  }
+
+
+  .container .box .details .content{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: white;
+    left: 21%;
+  }
+
+
+  .container .box .details .content h2{
+    margin:0;
+    padding: 0;
+    font-size: 50px;
+    color: white;
+  }
 }
