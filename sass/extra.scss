@@ -1,6 +1,4 @@
-body{
-  background-color:#fdfdfd;
-}
+
 
 // Overlay and text on images
 // ##############################################################################
@@ -70,12 +68,14 @@ opacity: 0;
   padding: 0;
   font-size: 60px;
   color: white;
+  font-family: 'Oswald', sans-serif;
+
 }
 
 //Buttos styling
 // ##############################################################################
 .buttons{
-  background-color: #c9cecd;
+  background-image: url(../img/Nature/DSC04334.jpg);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -89,11 +89,12 @@ opacity: 0;
 
 
 .buttonStyle{
-    font-family: 'Ubuntu', sans-serif;
+  font-family: 'Oswald', sans-serif;
     font-size: 30px;
-    margin: 20px 20px 20px 20px;
+    margin: 5%;
     text-decoration: none;
     color:white;
+    // font-weight: 400;
 }
 
 
@@ -124,7 +125,7 @@ opacity: 0;
 // Media queries
 @media (min-width: 884px) and (max-width: 1300px){
   .buttons{
-    margin-top: 5%;
+    margin-top: -1;
     background-color: transparent;
     flex-direction: row;
     align-items: center;
@@ -166,7 +167,7 @@ opacity: 0;
   .buttonStyle{
       font-family: 'Ubuntu', sans-serif;
       font-size: 25px;
-      margin: 20px 20px 20px 20px;
+      margin: 15%;
       text-decoration: none;
       color:#c9cecd;
     }
@@ -175,7 +176,7 @@ opacity: 0;
 
 @media (min-width:675px )and(max-width: 884px){
   .buttons{
-    margin-top: 5%;
+    margin-top: -2%;
     background-color: transparent;
     flex-direction: column;
     align-items: center;
@@ -185,7 +186,7 @@ opacity: 0;
 
   .container{
     width:100%;
-    margin: 70px auto 0;
+    margin: 10px auto 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -226,7 +227,9 @@ opacity: 0;
 
 @media (min-width: 575px)and(max-width:675px){
   .buttons{
-    margin-top: 5%;
+    margin-top: -2%;
+    margin-right: -2%;
+    margin-left: -2%;
     background-color: transparent;
     flex-direction: column;
     align-items: center;
@@ -245,7 +248,7 @@ opacity: 0;
 
   .container{
     width:100%;
-    margin: 70px auto 0;
+    margin: 10px auto 0;
     display: flex;
     flex-direction: column;
     // flex-wrap: wrap;
@@ -278,7 +281,9 @@ opacity: 0;
 
 @media (min-width: 475px)and(max-width:574px){
   .buttons{
-    margin-top: 5%;
+    margin-top: -2%;
+    margin-left: -2%;
+    margin-right: -2%;
     background-color: transparent;
     flex-direction: column;
     align-items: center;
@@ -297,7 +302,7 @@ opacity: 0;
 
   .container{
     width:100%;
-    margin: 70px auto 0;
+    margin: 10px auto 0;
     display: flex;
     flex-direction: column;
     // flex-wrap: wrap;
@@ -330,7 +335,9 @@ opacity: 0;
 
 @media (max-width:474px){
   .buttons{
-    margin-top: 5%;
+    margin-top: -4%;
+    margin-left: -4%;
+    margin-right: -4%;
     background-color: transparent;
     flex-direction: column;
     align-items: center;
@@ -341,7 +348,7 @@ opacity: 0;
   .buttonStyle{
       font-family: 'Ubuntu', sans-serif;
       font-size: 25px;
-      margin: 10px 10px 10px 10px;
+      margin: 20px;
       text-decoration: none;
       color:#c9cecd;
     }

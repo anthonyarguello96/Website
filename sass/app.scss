@@ -11,10 +11,11 @@
 
 
 .buttonStyle{
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 40px;
+  font-family: 'Oswald', sans-serif;
+    font-size: 50px;
     text-decoration: none;
     color:white;
+    font-weight: bold;
 
 }
 
@@ -27,7 +28,7 @@
 
 @keyframes transformButtons {
   0%{
-    text-decoration: none; color:#8dd2f7;
+    text-decoration: none; color:#fb4e07;
   }
   50%{
     transform: scale(1.1);
