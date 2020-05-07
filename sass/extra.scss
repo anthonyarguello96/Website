@@ -1,3 +1,15 @@
+.backgroundImage{
+  //   <img class="backgroundImage" src="img/Nature/IMG_1360.jpg" alt="Maine beach">
+width:100%;height:100%;position:absolute;top:0;left:0;z-index:-5000;
+}
+
+body{
+  background-image: url(../img/stock/silhouette-of-grass-under-white-sky-925743.jpg);
+  height: 95vh;
+  width: 94%;
+}
+
+
 
 
 // Overlay and text on images
@@ -25,6 +37,7 @@
 .container .box .imgBox{
 position: relative;
 overflow: hidden;
+margin:5%;
 }
 
 
@@ -78,23 +91,27 @@ opacity: 0;
   background-image: url(../img/Nature/DSC04334.jpg);
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  // justify-content: space-evenly;
+  justify-content: space-between;
   min-width: 100%;
-  margin-left: -1.37%;
-  margin-right: -1%;
-  margin-top: -1%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  margin: -2% -6% 0 -2%;
+  padding-top: 2.9%;
+  padding-bottom: 2.9%;
+  padding-left: -1.5%;
+  padding-right:-1.5%;
 }
 
 
 .buttonStyle{
   font-family: 'Oswald', sans-serif;
-    font-size: 30px;
+    font-size: 50px;
     margin: 5%;
     text-decoration: none;
     color:white;
-    // font-weight: 400;
+   font-weight: 600;
+   justify-self:center;
+   padding-left: 8%;
+   padding-right: 8%;
 }
 
 
@@ -382,7 +399,7 @@ opacity: 0;
     text-align: center;
     padding: 15px;
     color: white;
-    left: 21%;
+    left: 26%;
   }
 
 
