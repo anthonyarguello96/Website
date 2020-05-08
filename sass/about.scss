@@ -32,6 +32,7 @@ grid-template-columns: repeat(3, 33.33%)
 
 }
 
+
 .item-1 .buttonStyle{
   font-family: 'Oswald', sans-serif;
     font-size: 50px;
@@ -41,6 +42,7 @@ grid-template-columns: repeat(3, 33.33%)
     justify-self:center;
     // margin-left:35%;
 }
+
 
 .buttonStyle:hover{
   animation-name: transformButtons;
@@ -62,9 +64,6 @@ grid-template-columns: repeat(3, 33.33%)
 
 
  .buttonStyle:active { text-decoration: none; color:#868686; }
-
-
-
 
 
 .item-2{
@@ -96,11 +95,28 @@ font-size: 150%;
 }
 
 
-.item-5{
+.social-media{
   grid-area: footer;
   background: #283f03;
   margin: 0 -6% -2% -2%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: end;
+  align-items: center;
 }
+
+
+.social-media a{
+  margin-right:50%;
+  decoration: none;
+}
+
+
+a { text-decoration: none; }
+.social-media a:focus { text-decoration: none; color:white; }
+.social-media a:hover { text-decoration: none; color:none; transform: scale(1.2);}
+.social-media a:active{text-decoration: none; color:none;}
+.social-media a:visited { text-decoration: none; color:black; }
 
 
 .about-headshot{
@@ -108,6 +124,7 @@ font-size: 150%;
   width: 95%;
   min-height:95%;
 }
+
 
 .about-photo-1{
   margin-left:5%;
@@ -120,6 +137,7 @@ font-size: 150%;
   text-align: center;
   font-family: 'Raleway', sans-serif;
 }
+
 
 .about-text-quote{
   text-align: center;
