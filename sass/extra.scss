@@ -1,124 +1,16 @@
-.backgroundImage{
-  //   <img class="backgroundImage" src="img/Nature/IMG_1360.jpg" alt="Maine beach">
-width:100%;height:100%;position:absolute;top:0;left:0;z-index:-5000;
-}
-
-body{
-  background-image: url(../img/stock/silhouette-of-grass-under-white-sky-925743.jpg);
-  height: 95vh;
-  width: 94%;
-}
-
-
-
-
-// Overlay and text on images
-// ##############################################################################
-
-.container{
-  width:1280px;
-  margin: 70px auto 0;
-  display: flex;
-  flex-direction: row;
-  // flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.container .box{
-  position: relative;
-  width:50%;
-  height: 50%;
-  box-sizing: border-box;
-  margin: 10px;
-  display: inline-block;
-}
-
-.container .box .imgBox{
-position: relative;
-overflow: hidden;
-margin:5%;
-}
-
-
-.container .box .imgBox img{
-max-width: 100%;
-transition: transform 2s;
-}
-
-.container .box:hover .imgBox img {
-  transform: scale(1.1);
-}
-
-.container .box .details{
-  position: absolute;
-  top: 6px;
-  right: 6px;
-  bottom: 6px;
-  left: 6px;
-  background: rgba(201, 206, 205, 0.3);
-  transition: 0.3s ease-in;
-}
-
-
-.container .box:hover .details{
-opacity: 0;
-}
-
-.container .box .details .content{
-  position: absolute;
-  top:50%;
-  transform: translateY(-50%);
-  text-align: center;
-  padding: 15px;
-  color: white;
-  left: 30%;
-}
-
-
-.container .box .details .content h2{
-  margin:0;
+*{
+  margin: 0;
   padding: 0;
-  font-size: 60px;
-  color: white;
-  font-family: 'Oswald', sans-serif;
-
 }
 
-//Buttos styling
-// ##############################################################################
-.buttons{
-  background-image: url(../img/Nature/DSC04334.jpg);
+nav{
   display: flex;
   flex-direction: row;
-  // justify-content: space-evenly;
-  justify-content: space-between;
-  min-width: 100%;
-  margin: -2% -6% 0 -2%;
-  padding-top: 2.9%;
-  padding-bottom: 2.9%;
-  padding-left: -1.5%;
-  padding-right:-1.5%;
-}
-
-
-.buttonStyle{
-  font-family: 'Oswald', sans-serif;
-    font-size: 50px;
-    margin: 5%;
-    text-decoration: none;
-    color:white;
-   font-weight: 600;
-   justify-self:center;
-   padding-left: 8%;
-   padding-right: 8%;
-}
-
-
-.buttonStyle:hover{
-  animation-name: transformButtons;
-  animation-duration: 1.5s;
-  animation-fill-mode: forwards;
+  justify-content: space-around;
+  align-items: center;
+  background: green;
+  width: 100%;
+  height: 200px;
 }
 
 @keyframes transformButtons {
@@ -136,277 +28,65 @@ opacity: 0;
 }
 
 // ##############################################################################
-
-
-// ##############################################################################
-// Media queries
-@media (min-width: 884px) and (max-width: 1300px){
-  .buttons{
-    margin-top: -1;
-    background-color: transparent;
-    flex-direction: row;
-    align-items: center;
-    padding: 0;
-  }
-
-
-  .container{
-    width:100%;
-    margin: 70px auto 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-
-  .container .box{
-    position: relative;
-    width:100%;
-    height: 100%;
-    box-sizing: border-box;
-    margin: 10px;
-    display: inline-block;
-  }
-
-
-  .container .box .details .content{
-    position: absolute;
-    top:50%;
-    transform: translateY(-50%);
-    text-align: center;
-    padding: 15px;
-    color: white;
-    left: 40%;
-  }
-
-
-  .buttonStyle{
-      font-family: 'Ubuntu', sans-serif;
-      font-size: 25px;
-      margin: 15%;
-      text-decoration: none;
-      color:#c9cecd;
-    }
+.maincontainer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 7%;
+  margin-left: 7%;
 }
 
 
-@media (min-width:675px )and(max-width: 884px){
-  .buttons{
-    margin-top: -2%;
-    background-color: transparent;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-  }
+.container{
+  position: relative;
+  width: 80%;
+  height: 100%;
+  display: inline-block;
+}
 
+.container .image-nature{
+  display: block;
+  width: 80%;
+  height: 100%;
 
-  .container{
-    width:100%;
-    margin: 10px auto 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+}
+.container .image-human{
+  display: block;
+  width: 80%;
+  height: 100%;
 
+}
 
-  .container .box{
-    position: relative;
-    width:100%;
-    height: 100%;
-    box-sizing: border-box;
-    margin: 10px;
-    display: inline-block;
-  }
-
-
-  .container .box .details .content{
-    position: absolute;
-    top:50%;
-    transform: translateY(-50%);
-    text-align: center;
-    padding: 15px;
-    color: white;
-    left: 36%;
-  }
-
-
-  .buttonStyle{
-      font-family: 'Ubuntu', sans-serif;
-      font-size: 25px;
-      margin: 20px 20px 20px 20px;
-      text-decoration: none;
-      color:#c9cecd;
-    }
+.overlay{
+  position: absolute;
+  transition: all .3s ease;
+  opacity: 0;
+  background-color: #eee;
 }
 
 
-@media (min-width: 575px)and(max-width:675px){
-  .buttons{
-    margin-top: -2%;
-    margin-right: -2%;
-    margin-left: -2%;
-    background-color: transparent;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-  }
+.container:hover .overlay{
+  width: 80%;
+  opacity: 1;
+}
 
-
-  .buttonStyle{
-      font-family: 'Ubuntu', sans-serif;
-      font-size: 25px;
-      margin: 20px 20px 20px 20px;
-      text-decoration: none;
-      color:#c9cecd;
-    }
-
-
-  .container{
-    width:100%;
-    margin: 10px auto 0;
-    display: flex;
-    flex-direction: column;
-    // flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-
-  .container .box{
-    position: relative;
-    width:100%;
-    height: 100%;
-    box-sizing: border-box;
-    margin: 10px;
-    display: inline-block;
-  }
-
-
-  .container .box .details .content{
-    position: absolute;
-    top:50%;
-    transform: translateY(-50%);
-    text-align: center;
-    padding: 15px;
-    color: white;
-    left: 32%;
-  }
+.text{
+  color: text;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
 }
 
 
-@media (min-width: 475px)and(max-width:574px){
-  .buttons{
-    margin-top: -2%;
-    margin-left: -2%;
-    margin-right: -2%;
-    background-color: transparent;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-  }
-
-
-  .buttonStyle{
-      font-family: 'Ubuntu', sans-serif;
-      font-size: 25px;
-      margin: 20px 20px 20px 20px;
-      text-decoration: none;
-      color:#c9cecd;
-    }
-
-
-  .container{
-    width:100%;
-    margin: 10px auto 0;
-    display: flex;
-    flex-direction: column;
-    // flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-
-  .container .box{
-    position: relative;
-    width:100%;
-    height: 100%;
-    box-sizing: border-box;
-    margin: 10px;
-    display: inline-block;
-  }
-
-
-  .container .box .details .content{
-    position: absolute;
-    top:50%;
-    transform: translateY(-50%);
-    text-align: center;
-    padding: 15px;
-    color: white;
-    left: 26%;
-  }
+.overlay-left{
+  height: 100%;
+  width:80%;
+  top: 0;
+  left:0;
 }
 
-
-@media (max-width:474px){
-  .buttons{
-    margin-top: -4%;
-    margin-left: -4%;
-    margin-right: -4%;
-    background-color: transparent;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-  }
-
-
-  .buttonStyle{
-      font-family: 'Ubuntu', sans-serif;
-      font-size: 25px;
-      margin: 20px;
-      text-decoration: none;
-      color:#c9cecd;
-    }
-
-
-  .container{
-    width:100%;
-    margin: 10px auto 0;
-    display: flex;
-    flex-direction: column;
-    // flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-
-  .container .box{
-    position: relative;
-    width:100%;
-    height: 100%;
-    box-sizing: border-box;
-    margin: 10px;
-    display: inline-block;
-  }
-
-
-  .container .box .details .content{
-    position: absolute;
-    top:50%;
-    transform: translateY(-50%);
-    text-align: center;
-    padding: 15px;
-    color: white;
-    left: 26%;
-  }
-
-
-  .container .box .details .content h2{
-    margin:0;
-    padding: 0;
-    font-size: 50px;
-    color: white;
-  }
+.container:hover .overlay-left{
+  width: 80%;
 }
