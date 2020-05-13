@@ -98,26 +98,21 @@ font-size: 150%;
 
 .social-media{
   grid-area: footer;
-  background: #283f03;
+  background:rgba(228, 232, 239, 0.4);;
   margin: 0 -6% -2% -2%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-items: end;
+  justify-items: center;
   align-items: center;
 }
 
 
-.social-media a{
-  margin-right:50%;
-  decoration: none;
-}
-
-
-a { text-decoration: none; }
-.social-media a:focus { text-decoration: none; color:white; }
+a { text-decoration: none;
+color: black;}
+.social-media a:focus { text-decoration: none; color:black; }
 .social-media a:hover { text-decoration: none; color:none; transform: scale(1.2);}
 .social-media a:active{text-decoration: none; color:none;}
-.social-media a:visited { text-decoration: none; color:white; }
+.social-media a:visited { text-decoration: none; color:black; }
 
 
 .about-headshot{
@@ -125,11 +120,6 @@ a { text-decoration: none; }
   width: 95%;
   min-height:95%;
   transition: transform 2s;
-}
-
-
-.about-headshot:hover{
-    transform: scale(1.2);
 }
 
 

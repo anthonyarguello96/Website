@@ -86,15 +86,15 @@ nav a:visited { text-decoration: none; color:white; }
 
 .overlay{
   position: absolute;
-  transition: all 2s ease;
-  opacity: 0;
-  background-color:#312b2b;
+  transition: all .5s ease-in;
+  opacity: 1;
+  background-color:rgba(228, 232, 239, 0.4);
 }
 
 
 .container:hover .overlay{
   width: 80%;
-  opacity: 1;
+  opacity: 0;
 }
 
 .text{
@@ -132,7 +132,7 @@ footer{
   width: 100%;
   height: 200px;
   grid-area: footer;
-  background: #283f03;
+  background: rgba(228, 232, 239, 0.4);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
@@ -141,11 +141,12 @@ footer{
 }
 
 
-a { text-decoration: none; }
-footer a:focus { text-decoration: none; color:white; }
+a { text-decoration: none;
+color: black;}
+footer a:focus { text-decoration: none; color:black; }
 footer a:hover { text-decoration: none; color:none; transform: scale(1.2);}
 footer a:active{text-decoration: none; color:none;}
-footer a:visited { text-decoration: none; color:white; }
+footer a:visited { text-decoration: none; color:black; }
 
 
 
