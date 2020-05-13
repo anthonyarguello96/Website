@@ -141,12 +141,11 @@ footer{
 }
 
 
-a { text-decoration: none;
-color: black;}
+a { text-decoration: none; color: black; transition: all .4s ease-out}
 footer a:focus { text-decoration: none; color:black; }
-footer a:hover { text-decoration: none; color:none; transform: scale(1.2);}
+footer a:hover { text-decoration: none; color:lightgrey; transform: scale(1.2);}
 footer a:active{text-decoration: none; color:none;}
-footer a:visited { text-decoration: none; color:black; }
+footer a:visited { text-decoration: none; color:none; }
 
 
 

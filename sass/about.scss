@@ -107,12 +107,11 @@ font-size: 150%;
 }
 
 
-a { text-decoration: none;
-color: black;}
+.social-media a { text-decoration: none; color: black; transition: all .4s ease-out}
 .social-media a:focus { text-decoration: none; color:black; }
-.social-media a:hover { text-decoration: none; color:none; transform: scale(1.2);}
+.social-media a:hover { text-decoration: none; color:lightgrey; transform: scale(1.2);}
 .social-media a:active{text-decoration: none; color:none;}
-.social-media a:visited { text-decoration: none; color:black; }
+.social-media a:visited { text-decoration: none; color:none; }
 
 
 .about-headshot{
