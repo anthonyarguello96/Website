@@ -1,9 +1,17 @@
+*{
+  margin:0;
+  padding: 0;
+}
+
+
 //##################################################################
 //Nav settings
+
+
 nav{
-  width: 100vw;
   height: 300px;
-  background:white;
+  width: 100vw;
+  background: white;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
   align-items: center;
@@ -40,4 +48,126 @@ nav .buttonStyle{
   height: 250px;
   margin-top: 3%;
   justify-self: center;
+}
+
+
+//##################################################################
+//Main settings
+
+
+.contact-form-container{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  // background: rgba(228,232,239,0.4);
+}
+
+.contact-form{
+  background: black;
+  // background: rgba(228,232,239,0.4);
+  position: relative;
+  // top: 40%;
+  padding: 5% 10%;
+  box-sizing: border-box;
+  box-shadow: 0 0 20px #000000b3;
+  border-radius: 1.5%;
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.contact-form h1{
+  font-size: 65px;
+  color:white;
+  font-weight: 400;
+}
+
+
+.text-box{
+  border: 1px solid white;
+  margin-top:5%;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 1.5%;
+}
+
+.text-box label{
+  display:block;
+  text-align: left;
+}
+
+.text-box input, .text-box textarea{
+  width: 99%;
+  border: none;
+  background: black;
+  color: white;
+  font-size: 19px;
+}
+
+.contact-form .send-button {
+  display:inline-block;
+  width: 100%;
+  margin-top: 2%;
+  padding: 10px 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+
+//####################################################################
+//Footer settings
+
+footer{
+  background: black;
+  width: 100%;
+  height: 200px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  grid-template-areas:
+  '. text .'
+  'instagram fhp facebook'
+}
+
+
+footer a{
+  text-decoration: none;
+  transition: all .4s ease-out;
+
+}
+
+
+footer a{ color: white; }
+footer a:focus { text-decoration: none; color:white; }
+footer a:hover { text-decoration: none; color:lightgrey; transform: scale(1.2);}
+footer a:active{text-decoration: none; color:white;}
+footer a:visited { text-decoration: none; color:none; }
+
+
+.contact-form-container{
+  min-height: calc(100vh - 200px - 200px);
+}
+
+.social-media-text{
+  color: white;
+  justify-self:center;
+  grid-area: text;
+  font-family: 'Great Vibes', cursive;
+  font-size: 40px
+}
+
+.fa-instagram{
+  grid-area: instagram;
+}
+
+.fa-500px{
+  grid-area: fhp;
+}
+
+.fa-facebook-f{
+  grid-area: facebook;
 }

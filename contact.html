@@ -2,12 +2,51 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c7f1449558.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <title></title>
   </head>
   <nav>
-
+    <img src="img/websitelogo.jpg" alt="Arguello Studio Logo" class="logo">
+    <a class="buttonStyle home-button" href="index.html">HOME</a>
+    <a class="buttonStyle portfolio-button" href="portfolio.html">PORTFOLIO</a>
+    <a class="buttonStyle" href="about.html">ABOUT</a>
   </nav>
   <body>
-    <h1>Hellow Marshmellow!</h1>
+    <main>
+      <div class="contact-form-container">
+        <form class="contact-form" action="MAILTO:anthonyarguello96@gmail.com" method="post" enctype='text/plain'>
+            <h1>CONTACT US</h1>
+            <div class="text-box">
+              <label for="full-name">Full Name:</label>
+              <input id="full-name" type="text" name="Name" value="" placeholder="Type in your name">
+            </div>
+            <div class="text-box">
+              <label for="email">Email Adress:</label>
+              <input id="email" type="text" name="Email" value="" placeholder="Type in your email">
+            </div>
+            <div class="text-box">
+              <label for="phone-number">Phone number:</label>
+              <input id="phone-number" type="text" name="phone-number" value="" placeholder="Type in your email">
+            </div>
+            <div class="text-box">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message"></textarea>
+            </div>
+            <input class="send-button" type="submit" name="contact" value="Send">
+            <!-- <button type="button" name="contact">Send</button> -->
+         </form>
+      </div>
+    </main>
   </body>
+  <footer>
+    <div class="social-media-text">
+      <span>Social media</span>
+    </div>
+    <a href="https://www.instagram.com/iamthonystark/" class="fab fa-instagram fa-3x"></a>
+    <a href="https://500px.com/photographytools7" class="fab fa-500px fa-3x"></a>
+    <a href="https://www.facebook.com/anthony.arguello.1865" class="fab fa-facebook-f fa-3x"></a>
+  </footer>
 </html>
