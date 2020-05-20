@@ -1,4 +1,15 @@
+*{
+  margin:0;
+  padding: 0;
+}
 
+body{
+  height: 100vh;
+  background: url(../img/Nature/IMG_1360.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .welcomeSentence{
   color: white;
   font-family: 'Ubuntu', sans-serif;
