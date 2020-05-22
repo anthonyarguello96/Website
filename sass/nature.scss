@@ -34,8 +34,15 @@ nav .buttonStyle{
   margin-left: 6%;
 }
 
+
+.logo-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .logo{
-  width: 39%;
   height: 250px;
   margin-top: 3%;
   justify-self: center;
