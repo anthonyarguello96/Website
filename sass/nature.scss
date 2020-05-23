@@ -24,14 +24,7 @@ nav .buttonStyle{
     color:Black;
     font-weight: 300;
     transition: all .4s ease-out;
-}
-
-.home-button{
-  justify-self: center;
-}
-
-.portfolio-button{
-  margin-left: 6%;
+    justify-self: center;
 }
 
 
@@ -239,3 +232,175 @@ footer a:focus { text-decoration: none; color:black; }
 footer a:hover { text-decoration: none; color:lightgrey; transform: scale(1.2);}
 footer a:active{text-decoration: none; color:black;}
 footer a:visited { text-decoration: none; color:none; }
+
+
+//#############################################################################
+//Media Queries
+
+@media (max-width:1185px)and(min-height:935px) {
+ nav{
+   grid-template-columns: 100%;
+   grid-template-rows:1fr 1fr 1fr;
+ }
+
+ .logo-box{
+   display: none;
+ }
+
+
+ .mosaic-container{
+   display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+ }
+
+
+ .box{
+   background:#333;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   min-height: 700px;
+   margin: 2% 0 2% 0;
+ }
+
+
+
+   .box.photo4{
+   display: none;
+   }
+
+
+   .box.photo16{
+     display: none;
+   }
+
+}
+
+
+
+@media (max-width:934px)and(min-height:700px) {
+ nav{
+   grid-template-columns: 100%;
+   grid-template-rows:1fr 1fr 1fr;
+ }
+
+ .logo-box{
+   display: none;
+ }
+
+
+ .mosaic-container{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+ }
+
+
+ .box{
+   background:#333;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   min-height: 500px;
+   margin: 1% 0 1% 0;
+ }
+
+
+
+   .box.photo4{
+   display: none;
+   }
+
+
+   .box.photo16{
+     display: none;
+   }
+
+}
+
+
+@media (max-width:700px)and(min-height:500px){
+ nav{
+   grid-template-columns: 100%;
+   grid-template-rows:1fr 1fr 1fr;
+ }
+
+ .logo-box{
+   display: none;
+ }
+
+
+ .mosaic-container{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+ }
+
+
+ .box{
+   background:#333;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   min-height: 350px;
+   margin: 1% 0 1% 0;
+ }
+
+
+
+   .box.photo4{
+   display: none;
+   }
+
+
+   .box.photo16{
+     display: none;
+   }
+
+}
+
+
+@media (max-width:499px){
+ nav{
+   grid-template-columns: 100%;
+   grid-template-rows:1fr 1fr 1fr;
+ }
+
+ .logo-box{
+   display: none;
+ }
+
+
+ .mosaic-container{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+ }
+
+
+ .box{
+   background:#333;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   min-height: 230px;
+   margin: 1% 0 1% 0;
+ }
+
+
+
+   .box.photo4{
+   display: none;
+   }
+
+
+   .box.photo16{
+     display: none;
+   }
+
+}
