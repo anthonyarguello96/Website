@@ -169,3 +169,171 @@ footer a:focus { text-decoration: none; color:black; }
 footer a:hover { text-decoration: none; color:lightgrey; transform: scale(1.2);}
 footer a:active{text-decoration: none; color:black;}
 footer a:visited { text-decoration: none; color:none; }
+
+
+//##############################################################
+//Media queries
+
+@media (max-width:1185px)and(min-width:895px){
+  nav{
+    grid-template-columns: 100%;
+    grid-template-rows:1fr 1fr 1fr;
+  }
+
+  .box.photo1{
+  display: none;
+  }
+
+  .box.photo3{
+   min-height: 1450px;
+  }
+
+  .logo-box{
+    display: none;
+  }
+
+
+  .mosaic-container{
+    display:flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   margin: 0;
+  }
+
+
+   .box{
+     background:#333;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     min-height: 750px;
+     margin: 2% 0 2% 1%;
+   }
+
+}
+
+
+@media (max-width:895px)and(min-width:655px){
+  nav{
+    grid-template-columns: 100%;
+    grid-template-rows:1fr 1fr 1fr;
+  }
+
+
+  .box.photo1{
+  display: none;
+  }
+
+  .box.photo3{
+   min-height: 950px;
+  }
+
+
+  .logo-box{
+    display: none;
+  }
+
+
+  .mosaic-container{
+    display:flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   margin: 0;
+  }
+
+
+   .box{
+     background:#333;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     min-height: 400px;
+     margin: 2% 0 2% 1%;
+   }
+
+}
+
+
+
+@media (max-width:655px)and(min-width:500px){
+  nav{
+    grid-template-columns: 100%;
+    grid-template-rows:1fr 1fr 1fr;
+  }
+
+
+  .box.photo1{
+     min-height: 900px;
+  }
+
+  .box.photo3{
+   min-height: 900px;
+  }
+
+
+  .logo-box{
+    display: none;
+  }
+
+
+  .mosaic-container{
+    display:flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   margin: 0;
+  }
+
+
+   .box{
+     background:#333;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     min-height: 350px;
+     margin: 2% 0 2% 1%;
+   }
+
+}
+
+
+
+@media (max-width:500px){
+  nav{
+    grid-template-columns: 100%;
+    grid-template-rows:1fr 1fr 1fr;
+  }
+
+
+  .box.photo1{
+  min-height: 550px;
+  }
+
+  .box.photo3{
+   min-height: 550px;
+  }
+
+
+
+  .logo-box{
+    display: none;
+  }
+
+
+  .mosaic-container{
+    display:flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   margin: 0;
+  }
+
+
+   .box{
+     background:#333;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     min-height: 250px;
+     margin: 2% 0 2% 1%;
+   }
+
+}

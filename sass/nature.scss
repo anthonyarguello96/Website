@@ -237,7 +237,7 @@ footer a:visited { text-decoration: none; color:none; }
 //#############################################################################
 //Media Queries
 
-@media (max-width:1185px)and(min-height:935px) {
+@media (max-width:1185px)and(min-width:935px) {
  nav{
    grid-template-columns: 100%;
    grid-template-rows:1fr 1fr 1fr;
@@ -280,7 +280,7 @@ footer a:visited { text-decoration: none; color:none; }
 
 
 
-@media (max-width:934px)and(min-height:700px) {
+@media (max-width:934px)and(min-width:700px) {
  nav{
    grid-template-columns: 100%;
    grid-template-rows:1fr 1fr 1fr;
@@ -322,7 +322,7 @@ footer a:visited { text-decoration: none; color:none; }
 }
 
 
-@media (max-width:700px)and(min-height:500px){
+@media (max-width:700px)and(min-width:500px){
  nav{
    grid-template-columns: 100%;
    grid-template-rows:1fr 1fr 1fr;
