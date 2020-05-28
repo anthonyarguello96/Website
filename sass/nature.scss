@@ -175,7 +175,7 @@ background-image: url(../img/Nature/IMG_2200.jpg);
   .box.photo17{
     grid-column:1/4;
     grid-row:35/39;
-    background-image: url(../img/Nature/DSC04457-Edit.jpg);
+    background-image: url(../img/Nature/IMG_9864.jpg);
   }
 
 
@@ -191,15 +191,98 @@ background-image: url(../img/Nature/IMG_2200.jpg);
     grid-row:39/44;
     background-image: url(../img/Nature/IMG_9631.jpg);
   }
-  //
-  //
-  // .box.photo20{
+
+
+  .box.photo20{
+    grid-column:1/4;
+    grid-row:44/47;
+    background-image: url(../img/Nature/DSC02837.jpg);
+  }
+
+
+  .box.photo21{
+    grid-column:4/7;
+    grid-row:44/51;
+    background-image: url(../img/Nature/IMG_0769.jpg);
+  }
+
+
+  .box.photo22{
+    grid-column:1/4;
+    grid-row:47/51;
+    background-image: url(../img/Nature/IMG_1107.jpg);
+  }
+
+
+  .box.photo23{
+    grid-column:1/4;
+    grid-row:51/57;
+    background-image: url(../img/Nature/IMG_0780.jpg);
+  }
+
+
+  .box.photo24{
+    grid-column:4/7;
+    grid-row:51/54;
+    background-image: url(../img/Nature/IMG_6422.jpg);
+  }
+
+
+  .box.photo25{
+    grid-column:4/7;
+    grid-row:54/57;
+    background-image: url(../img/Nature/IMG_6487.jpg);
+  }
+
+
+  .box.photo26{
+    grid-column:1/7;
+    grid-row:57/63;
+    background-image: url(../img/Nature/IMG_1306.jpg);
+  }
+
+
+  .box.photo27{
+    grid-column:1/4;
+    grid-row:63/66;
+    background-image: url(../img/Nature/IMG_3421.jpg);
+  }
+
+
+  .box.photo28{
+    grid-column:4/7;
+    grid-row:63/66;
+    background-image: url(../img/Nature/IMG_3922.jpg);
+  }
+
+
+  .box.photo29{
+    grid-column:1/7;
+    grid-row:66/72;
+    background-image: url(../img/Nature/IMG_20190111_153803.jpg);
+  }
+
+
+  // .box.photo21{
   //   grid-column:;
   //   grid-row:;
   //   background-image: url(../);
   // }
-  //
-  //
+  // .box.photo21{
+  //   grid-column:;
+  //   grid-row:;
+  //   background-image: url(../);
+  // }
+  // .box.photo21{
+  //   grid-column:;
+  //   grid-row:;
+  //   background-image: url(../);
+  // }
+  // .box.photo21{
+  //   grid-column:;
+  //   grid-row:;
+  //   background-image: url(../);
+  // }
   // .box.photo21{
   //   grid-column:;
   //   grid-row:;
@@ -361,6 +444,12 @@ footer a:visited { text-decoration: none; color:none; }
      display: none;
    }
 
+
+   .box.photo23{
+     display: none;
+   }
+
+
 }
 
 
@@ -402,5 +491,10 @@ footer a:visited { text-decoration: none; color:none; }
    .box.photo16{
      display: none;
    }
+
+   .box.photo23{
+     display: none;
+   }
+
 
 }
