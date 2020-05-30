@@ -124,7 +124,7 @@ footer{
   justify-items: center;
   align-items: center;
   grid-template-areas:
-  '. text .'
+  'text text text'
   'instagram fhp facebook';
 
   box-sizing: border-box;
@@ -162,13 +162,18 @@ footer a:visited { text-decoration: none; color:none; }
   grid-area: instagram;
 }
 
+
 .fa-500px{
   grid-area: fhp;
 }
 
+
+
 .fa-facebook-f{
   grid-area: facebook;
 }
+
+
 
 
 //##################################################################################
