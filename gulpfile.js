@@ -50,13 +50,14 @@ function copyHtml(cb) {
 }
 
 
-function copyImages() {
-  return gulp.src('img/**/*.jpg')
+function copyImages(cb) {
+  gulp.src('img/*')
       .pipe(imagemin({
         progressive: true,
         use: imageminPngquant(),
       }))
       .pipe(gulp.dest('dist/img'));
+  cb();
 }
 
 
