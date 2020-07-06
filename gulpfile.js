@@ -38,6 +38,7 @@ function styles(cb) {
             browserlist: ['last 2 versions'],
           }))
       .pipe(gulp.dest('dist/css'))
+      .pipe(gulp.dest('css/'))
       .pipe(browserSync.stream());
   cb();
 }
