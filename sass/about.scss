@@ -57,32 +57,31 @@ nav a{
 main{
   display:grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
   min-height: calc(100vh - 250px - 300px);
   grid-template-areas:
-  'photo1 text'
-  'photo2 text';
+  'photo1 text';
+  justify-content: center;
+  align-items: center;
 }
 
 .photo-box1{
   // background: yellow;
   grid-area: photo1;
   max-width: 100%;
-  min-height: 300px;
-  margin-left: 6%;
-  margin-top: 6%;
+  min-height: 400px;
+  margin: 6% 4% 6% 6%;
   box-sizing: border-box;
 }
 
-.photo-box2{
-  // background: yellow;
-  grid-area: photo2;
-  max-width: 100%;
-  min-height: 300px;
-  margin-left: 6%;
-  margin-top: 4%;
-  box-sizing: border-box;
-}
+// .photo-box2{
+//   // background: yellow;
+//   grid-area: photo2;
+//   max-width: 100%;
+//   min-height: 300px;
+//   margin-left: 6%;
+//   margin-top: 4%;
+//   box-sizing: border-box;
+// }
 
 .about-images{
   width: 100%;
@@ -99,7 +98,7 @@ main{
   margin:6% 4% 2% 2%;
   align-self: center;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   font-family: 'Raleway', sans-serif;
   padding: 2%;
 }
